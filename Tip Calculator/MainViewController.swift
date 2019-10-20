@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var amountOfBillEntered: UITextField!
     
     // Connected text field of people to controller using an outlet
-    
     @IBOutlet weak var amountOfPeopleEntered: UITextField!
     
 
@@ -96,27 +95,23 @@ class ViewController: UIViewController {
                 return
             }
             
-    /* guard let amountOfPeopleDouble = Double(amountOfPeopleString) else {
+    guard let amountOfPeopleDouble = Double(amountOfPeopleString) else {
             //   errorLabel.text = "Error. Please enter a number."
-            //   return
-    } */
+             return
+    }
       
         
         
-        // Calculate tip amount
+        // Calculate tip amount, round it, and chnage it into a string
         let tipAmount = amountOfBillDouble * tipPercent
-
-        // Round the value to 2 decimal places
         let roundedtipAmount = (round(100*tipAmount)/100)
-        
-        // Change tip amount into a string
         let tipAmountString = String(roundedtipAmount)
         
         // Share information to the user interface
-        totalTipLabel.text = "Total Tip: \(tipAmountString)$"
+        totalTipLabel.text = "The total tip amount is:" + tipAmountString
         
         // Calculate tip per person
-        let tipAmountPerPerson = tipAmount/2
+        let tipAmountPerPerson = tipAmount/amountOfPeopleDouble
         
         // Round the value to 2 decimal places
         let roundedTipAmountPerPerson = (round(100*tipAmountPerPerson)/100)
