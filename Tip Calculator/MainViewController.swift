@@ -59,25 +59,37 @@ class ViewController: UIViewController {
     @IBAction func tip5(_ sender: Any) {
         tipPercent = 0.05
         buttonPressed = true
-        buttonFive.backgroundColor = UIColor.red
-        
+        buttonFive.backgroundColor = UIColor.blue
+        buttonTen.backgroundColor = UIColor.darkGray
+        buttonFifteen.backgroundColor = UIColor.darkGray
+        buttonTwenty.backgroundColor = UIColor.darkGray
+        // could make a function for this but not really sure how (I know it's redundant code)
     }
     
     @IBAction func tip10(_ sender: Any) {
         tipPercent = 0.10
         buttonPressed = true
         buttonTen.backgroundColor = UIColor.blue
+        buttonFive.backgroundColor = UIColor.darkGray
+        buttonFifteen.backgroundColor = UIColor.darkGray
+        buttonTwenty.backgroundColor = UIColor.darkGray
     }
     
     @IBAction func tip15(_ sender: Any) {
         tipPercent = 0.15
         buttonPressed = true
         buttonFifteen.backgroundColor = UIColor.blue
+        buttonFive.backgroundColor = UIColor.darkGray
+        buttonTen.backgroundColor = UIColor.darkGray
+        buttonTwenty.backgroundColor = UIColor.darkGray
     }
     
     @IBAction func tip20(_ sender: Any) {
         tipPercent = 0.20
         buttonPressed = true
+        buttonFive.backgroundColor = UIColor.darkGray
+        buttonTen.backgroundColor = UIColor.darkGray
+        buttonFifteen.backgroundColor = UIColor.darkGray
         buttonTwenty.backgroundColor = UIColor.blue
     }
  
