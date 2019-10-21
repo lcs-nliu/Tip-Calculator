@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wj8-ha-QpF">
-                                <rect key="frame" x="140" y="332" width="97" height="30"/>
+                                <rect key="frame" x="140" y="332" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -83,34 +83,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewz-IJ-A5t">
-                                <rect key="frame" x="205" y="233" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="15%"/>
-                                <connections>
-                                    <action selector="tip15:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsL-YT-xo9"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmn-YT-6u2">
-                                <rect key="frame" x="137" y="233" width="30" height="30"/>
+                                <rect key="frame" x="126" y="233" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="10%"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="10%">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="tip10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4tz-2V-AXi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5L-Od-MMI">
-                                <rect key="frame" x="271" y="233" width="31" height="30"/>
+                                <rect key="frame" x="277" y="233" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="20%"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="20%">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="tip20:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWT-9J-SFy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-Qt-hFW">
-                                <rect key="frame" x="62" y="233" width="30" height="30"/>
+                                <rect key="frame" x="53" y="233" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="5%"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="5%">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="tip5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctO-Lm-TsZ"/>
                                 </connections>
@@ -122,6 +124,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewz-IJ-A5t">
+                                <rect key="frame" x="203" y="233" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="15%">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tip15:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsL-YT-xo9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -129,6 +142,10 @@
                     <connections>
                         <outlet property="amountOfBillEntered" destination="q8X-Fk-Clj" id="A79-Ag-aHs"/>
                         <outlet property="amountOfPeopleEntered" destination="wj8-ha-QpF" id="naC-IK-ImP"/>
+                        <outlet property="buttonFifteen" destination="ewz-IJ-A5t" id="JxI-ku-cLS"/>
+                        <outlet property="buttonFive" destination="6jE-Qt-hFW" id="6NH-c3-kZk"/>
+                        <outlet property="buttonTen" destination="Wmn-YT-6u2" id="rr5-V1-OPE"/>
+                        <outlet property="buttonTwenty" destination="c5L-Od-MMI" id="r4i-5n-JUe"/>
                         <outlet property="errorLabel" destination="8uo-eJ-7Rs" id="Hx2-cy-upO"/>
                         <outlet property="tipPerPersonLabel" destination="ove-Sk-nGa" id="QCX-dE-tWy"/>
                         <outlet property="totalTipLabel" destination="ovP-Zi-Xr8" id="Y82-OS-4bs"/>

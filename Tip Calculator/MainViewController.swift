@@ -15,9 +15,12 @@ class ViewController: UIViewController {
     // MARK: Properties
     
     
-    //Establish Button Pressed as a false boolean
+    // Establish Button Pressed as a false boolean
     var buttonPressed: Bool = false
+    // Establish tip percent as a double data type with decimal places
     var tipPercent = Double (0.0)
+
+
     
     // Connected text field of bill amount to controller using an outlet
     @IBOutlet weak var amountOfBillEntered: UITextField!
@@ -35,6 +38,11 @@ class ViewController: UIViewController {
     // Connected error label to controller using an outlet
     @IBOutlet weak var errorLabel: UILabel!
     
+     // Connected tip buttons to controller using outlets
+    @IBOutlet weak var buttonFive: UIButton!
+    @IBOutlet weak var buttonTen: UIButton!
+    @IBOutlet weak var buttonFifteen: UIButton!
+    @IBOutlet weak var buttonTwenty: UIButton!
     
     
     // MARK: Methods
@@ -46,26 +54,31 @@ class ViewController: UIViewController {
         
     }
     
-    // Connected tip buttons to controller using actions
+    // Connected tip buttons to controller using actions so that every time one tip button is pressed, tip percent is set to 0.05, bool is set to true, and button background colour is set to blue
 
     @IBAction func tip5(_ sender: Any) {
         tipPercent = 0.05
         buttonPressed = true
+        buttonFive.backgroundColor = UIColor.red
+        
     }
     
     @IBAction func tip10(_ sender: Any) {
         tipPercent = 0.10
         buttonPressed = true
+        buttonTen.backgroundColor = UIColor.blue
     }
     
     @IBAction func tip15(_ sender: Any) {
         tipPercent = 0.15
         buttonPressed = true
+        buttonFifteen.backgroundColor = UIColor.blue
     }
     
     @IBAction func tip20(_ sender: Any) {
         tipPercent = 0.20
         buttonPressed = true
+        buttonTwenty.backgroundColor = UIColor.blue
     }
  
      //  Obtain the amount of bill value from the text field
