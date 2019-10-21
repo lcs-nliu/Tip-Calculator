@@ -66,12 +66,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
-                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXc-97-BZc"/>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="13l-im-6sV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Tip: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovP-Zi-Xr8">
-                                <rect key="frame" x="150" y="507" width="75" height="21"/>
+                                <rect key="frame" x="0.0" y="507" width="375" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -116,8 +115,8 @@
                                     <action selector="tip5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctO-Lm-TsZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Per Person:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ove-Sk-nGa">
-                                <rect key="frame" x="131" y="547" width="117" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Per Person:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ove-Sk-nGa">
+                                <rect key="frame" x="0.0" y="547" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -128,15 +127,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="amountOfBill" destination="q8X-Fk-Clj" id="7Tv-Hr-2mz"/>
-                        <outlet property="amountOfPeople" destination="wj8-ha-QpF" id="QSb-fv-JLx"/>
+                        <outlet property="amountOfBillEntered" destination="q8X-Fk-Clj" id="A79-Ag-aHs"/>
+                        <outlet property="amountOfPeopleEntered" destination="wj8-ha-QpF" id="naC-IK-ImP"/>
                         <outlet property="errorLabel" destination="8uo-eJ-7Rs" id="Hx2-cy-upO"/>
-                        <outlet property="titleLabel" destination="8uo-eJ-7Rs" id="CMz-y2-GW5"/>
+                        <outlet property="tipPerPersonLabel" destination="ove-Sk-nGa" id="QCX-dE-tWy"/>
                         <outlet property="totalTipLabel" destination="ovP-Zi-Xr8" id="Y82-OS-4bs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>

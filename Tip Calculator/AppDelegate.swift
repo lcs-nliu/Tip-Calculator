@@ -3,7 +3,7 @@
 //  Tip Calculator
 //
 //  Created by Liu, Bojun on 2019-10-10.
-//  Copyright © 2019 Liu, Nicole. All rights reserved.
+//  Copyright © 2019 Liu, Bojun. All rights reserved.
 //
 
 import UIKit
